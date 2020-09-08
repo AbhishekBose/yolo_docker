@@ -11,7 +11,7 @@ RUN \
 	ffmpeg \ 
 	git
 
-RUN pip3 intall numpy
+RUN pip3 install numpy
 RUN pip3 install opencv-python
 RUN pip3 install requests
 RUN pip3 install numba
