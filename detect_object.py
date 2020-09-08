@@ -10,6 +10,7 @@ import numpy as np
 import time
 import sys
 import imutils
+import json
 #%%
 THIS_DIR = os.path.dirname(os.path.realpath(__file__))
 
@@ -188,7 +189,6 @@ if __name__ == "__main__":
     metadet = load_meta(obj_data)   
 
     obj_res = netdetect(netlp,metalp, veh,0.7)
-    for obj_res:
-        print('All detected objects are:: ')
-        for i in range(len(obj_res)):
-            print(obj_res[i][0])
+    print('All detected objects are:: ')
+    for i in range(len(obj_res)):
+        print(obj_res[i][0])
